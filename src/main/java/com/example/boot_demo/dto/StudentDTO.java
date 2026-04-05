@@ -1,5 +1,8 @@
 package com.example.boot_demo.dto;
 
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+
+@JsonPropertyOrder({"id", "name", "email"})
 public class StudentDTO {
     private long id;
 

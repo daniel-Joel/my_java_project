@@ -1,11 +1,21 @@
 package com.example.boot_demo.dao;
 
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import static jakarta.persistence.GenerationType.IDENTITY;
 
 @Entity
 @Table(name="student")
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+@JsonPropertyOrder({"id", "name", "email"})
 public class Student {
     @Id
     @Column(name="id")
@@ -21,35 +31,7 @@ public class Student {
     @Column(name="age")
     private int age;
 
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
+//    @Column(name = "gender")
+//    @Convert(converter=GenderConverter.class)
+//    private  Gender gender;
 }

@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9349c3dd-1b36-4774-baac-d7672ca3f69a" name="更改" comment="第一次提交，上传Java项目文件" />
+    <list default="true" id="9349c3dd-1b36-4774-baac-d7672ca3f69a" name="更改" comment="第一次提交，上传Java项目文件">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/boot_demo/dao/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/boot_demo/dao/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/boot_demo/dao/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/boot_demo/dao/StudentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/boot_demo/dto/StudentDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/boot_demo/dto/StudentDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/boot_demo/BootDemoApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/boot_demo/BootDemoApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/boot_demo/dao/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/boot_demo/dao/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/boot_demo/dao/StudentRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/boot_demo/dao/StudentRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/boot_demo/dto/StudentDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/boot_demo/dto/StudentDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/boot_demo/BootDemoApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/example/boot_demo/BootDemoApplicationTests.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,18 +33,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "daniel-Joel"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;daniel-Joel&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/daniel-Joel/my_java_project.git",
-    "accountId": "c721670a-19bd-4721-83a0-0bc50055e87a"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/daniel-Joel/my_java_project.git&quot;,
+    &quot;accountId&quot;: &quot;c721670a-19bd-4721-83a0-0bc50055e87a&quot;
   }
-}]]></component>
+}</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -50,20 +62,23 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.BootDemoApplicationTests.executor": "Debug",
+    "JUnit.BootDemoApplicationTests.test.executor": "Debug",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/java_learning/java_projects/boot-demo/pom.xml",
     "project.structure.last.edited": "SDK",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "应用程序.BootDemoApplication.executor": "Run"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.BootDemoApplicationTests.test">
     <configuration name="BootDemoApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.boot_demo.BootDemoApplication" />
       <module name="boot-demo" />
@@ -77,8 +92,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BootDemoApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="boot-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.boot_demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.boot_demo" />
+      <option name="MAIN_CLASS_NAME" value="com.example.boot_demo.BootDemoApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BootDemoApplicationTests.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="boot-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.boot_demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.boot_demo" />
+      <option name="MAIN_CLASS_NAME" value="com.example.boot_demo.BootDemoApplicationTests" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BootDemoApplicationTests.test" />
+        <item itemvalue="JUnit.BootDemoApplicationTests" />
         <item itemvalue="应用程序.BootDemoApplication" />
       </list>
     </recent_temporary>

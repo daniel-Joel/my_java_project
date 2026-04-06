@@ -11,6 +11,7 @@ import org.springframework.util.CollectionUtils;
 import org.springframework.util.StringUtils;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class StudentServiceImpl implements StudentService{
@@ -35,9 +36,17 @@ public class StudentServiceImpl implements StudentService{
     }
 
     @Override
-    public void deleteStudentById(long id) {
-        studentRepository.findById(id).orElseThrow(() -> new IllegalArgumentException("id：" + id + "doesn't exit!"));
-        studentRepository.deleteById(id);
+    public String deleteStudentById(long id) {
+        Optional<Student> studentOpt = studentRepository.findById(id);
+        if (studentOpt.isEmpty()) {
+            return "删除失败：id " + id + " 不存在！";
+        }
+        try {
+            studentRepository.delete(studentOpt.get());
+            return "删除成功";
+        } catch (Exception e) {
+            return "删除失败：" + e.getMessage();
+        }
     }
 
     @Override

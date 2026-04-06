@@ -1,7 +1,17 @@
 package com.example.boot_demo.dto;
 
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 @JsonPropertyOrder({"id", "name", "email"})
 public class StudentDTO {
     private long id;
@@ -9,6 +19,10 @@ public class StudentDTO {
     private  String name;
 
     private String email;
+
+    private Integer minAge;
+
+    private Integer maxAge;
 
     public long getId() {
         return id;

@@ -7,7 +7,7 @@ public interface StudentService {
 
     StudentDTO getStudentById(long id);
 
-    Long addNewStudent(StudentDTO studentDTO);
+    Student addNewStudent(StudentDTO studentDTO);
 
     String deleteStudentById(long id);
 

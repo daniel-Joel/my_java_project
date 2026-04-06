@@ -26,13 +26,13 @@ public class StudentServiceImpl implements StudentService{
     }
 
     @Override
-    public Long addNewStudent(StudentDTO studentDTO) {
+    public Student addNewStudent(StudentDTO studentDTO) {
         List<Student> studentList = studentRepository.findByEmail(studentDTO.getEmail());
         if(!CollectionUtils.isEmpty(studentList)){
             throw new IllegalStateException("email:" + studentDTO.getEmail() + "has been taken");
         }
         Student student = studentRepository.save(StudentConverter.convertStudent(studentDTO));
-        return student.getId();
+        return student;
     }
 
     @Override

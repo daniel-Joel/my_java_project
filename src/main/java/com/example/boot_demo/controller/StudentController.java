@@ -5,6 +5,7 @@ import com.example.boot_demo.dto.StudentDTO;
 import com.example.boot_demo.service.StudentService;
 import com.example.boot_demo.Response;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -19,7 +20,7 @@ public class StudentController {
     }
 
     @PostMapping("/student")
-    public Response<Long> addNewStudent(@RequestBody StudentDTO studentDTO){
+    public Response<Student> addNewStudent(@Validated @RequestBody StudentDTO studentDTO){
         return Response.newSuccess(studentService.addNewStudent(studentDTO));
     }
 

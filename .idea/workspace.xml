@@ -5,14 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9349c3dd-1b36-4774-baac-d7672ca3f69a" name="更改" comment="第一次提交，上传Java项目文件">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/boot_demo/dao/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/boot_demo/dao/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/boot_demo/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/boot_demo/controller/StudentController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/boot_demo/dao/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/boot_demo/dao/StudentRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/boot_demo/dto/StudentDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/boot_demo/dto/StudentDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/boot_demo/service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/boot_demo/service/StudentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/boot_demo/service/StudentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/boot_demo/service/StudentServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/example/boot_demo/BootDemoApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/boot_demo/BootDemoApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/boot_demo/dao/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/boot_demo/dao/Student.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/boot_demo/dao/StudentRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/boot_demo/dao/StudentRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/boot_demo/dto/StudentDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/boot_demo/dto/StudentDTO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/boot_demo/BootDemoApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/example/boot_demo/BootDemoApplicationTests.class" afterDir="false" />
@@ -31,6 +30,24 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="release/v1" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -60,25 +77,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JUnit.BootDemoApplicationTests.executor": "Debug",
-    "JUnit.BootDemoApplicationTests.test.executor": "Debug",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/java_learning/java_projects/boot-demo/pom.xml",
-    "project.structure.last.edited": "SDK",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "应用程序.BootDemoApplication.executor": "Run"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.BootDemoApplicationTests.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.BootDemoApplicationTests.test.executor&quot;: &quot;Debug&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;demo&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/java_learning/java_projects/boot-demo/pom.xml&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;全局库&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;应用程序.BootDemoApplication.executor&quot;: &quot;Run&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="JUnit.BootDemoApplicationTests.test">
+}</component>
+  <component name="RunManager" selected="应用程序.BootDemoApplication">
     <configuration name="BootDemoApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.boot_demo.BootDemoApplication" />
       <module name="boot-demo" />
@@ -125,9 +142,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.BootDemoApplication" />
         <item itemvalue="JUnit.BootDemoApplicationTests.test" />
         <item itemvalue="JUnit.BootDemoApplicationTests" />
-        <item itemvalue="应用程序.BootDemoApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -173,5 +190,16 @@
     <MESSAGE value="1111" />
     <MESSAGE value="第一次提交，上传Java项目文件" />
     <option name="LAST_COMMIT_MESSAGE" value="第一次提交，上传Java项目文件" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/example/boot_demo/BootDemoApplicationTests.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

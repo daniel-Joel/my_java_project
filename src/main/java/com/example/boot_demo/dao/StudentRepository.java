@@ -18,6 +18,6 @@ public interface StudentRepository extends JpaRepository<Student,Long>, JpaSpeci
 
     List<Student> findByNameStartingWith(String namePrefix);
 
-    @Query("select stu from Student stu where email = :email")
+    @Query(value = "select * from Student  where email = :email",nativeQuery = true)
     List<Student> findByEmail2(@Param("email") String email);
 }

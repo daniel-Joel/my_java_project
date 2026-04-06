@@ -3,6 +3,8 @@ package com.example.boot_demo.dto;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -14,37 +16,14 @@ import lombok.NoArgsConstructor;
 @Builder
 @JsonPropertyOrder({"id", "name", "email"})
 public class StudentDTO {
-    private long id;
+    private Long id;
 
+    @NotBlank(message = "学生姓名不能为空")
     private  String name;
 
+    @Email(message = "邮箱格式错误")
     private String email;
 
-    private Integer minAge;
-
-    private Integer maxAge;
-
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
+    @NotBlank(message = "学生地址不能为空")
+    private String address;
 }

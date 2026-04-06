@@ -20,7 +20,7 @@ public class Student {
     @Id
     @Column(name="id")
     @GeneratedValue(strategy = IDENTITY)
-    private long id;
+    private Long id;
 
     @Column(name="name")
     private  String name;
@@ -29,7 +29,10 @@ public class Student {
     private String email;
 
     @Column(name="age")
-    private int age;
+    private Integer age;
+
+    @Column(name="address")
+    private String address;
 
 //    @Column(name = "gender")
 //    @Convert(converter=GenderConverter.class)

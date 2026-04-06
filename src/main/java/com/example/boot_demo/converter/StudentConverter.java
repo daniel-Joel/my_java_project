@@ -9,6 +9,7 @@ public class StudentConverter {
         studentDTO.setId(student.getId());
         studentDTO.setName(student.getName());
         studentDTO.setEmail(student.getEmail());
+        studentDTO.setAddress(student.getAddress());
         return studentDTO;
     }
 
@@ -16,6 +17,7 @@ public class StudentConverter {
         Student student = new Student();
         student.setName(studentDTO.getName());
         student.setEmail(studentDTO.getEmail());
+        student.setAddress(studentDTO.getAddress());
         return student;
     }
 }
